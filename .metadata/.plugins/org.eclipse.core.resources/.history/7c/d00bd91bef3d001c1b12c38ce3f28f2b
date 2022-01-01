@@ -1,0 +1,29 @@
+package com.spring.ioc.IOC_Assignment1;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+//import org.springframework.context.annotation.Configuration;
+
+import com.spring.ioc.IOC_Assignment1.model.Student;
+
+/**
+ * Hello world!
+ *
+ */
+public class App {
+	public static void main(String[] args) {
+
+		ApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
+
+		Student student1 = context.getBean("student", Student.class);
+
+		System.out.println(student1);
+		System.out.println(student1.hashCode());
+
+		Student student2 = context.getBean("student", Student.class);
+
+		System.out.println(student2);
+		System.out.println(student2.hashCode());
+
+	}
+}

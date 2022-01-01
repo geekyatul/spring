@@ -1,0 +1,19 @@
+package com.spring.ioc.IOC_Assignment1;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+//import org.springframework.context.annotation.Configuration;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+     
+       ApplicationContext context= new AnnotationConfigApplicationContext();    	
+    	
+    }
+}

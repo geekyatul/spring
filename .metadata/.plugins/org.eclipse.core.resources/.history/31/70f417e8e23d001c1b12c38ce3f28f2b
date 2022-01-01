@@ -1,0 +1,11 @@
+package com.spring.basic.Assignment2;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+
+@ComponentScan(basePackages = "com.spring.basic.Assignment2")
+@Configuration
+public class Config {
+
+}

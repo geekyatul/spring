@@ -1,0 +1,23 @@
+package com.spring.basic.Assignment2;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	 ApplicationContext applicationContext=new  AnnotationConfigApplicationContext("config.xml");
+         
+    	
+    	 
+         Movie movie=(Movie) applicationContext.getBean("movie",Movie.class);
+    
+         System.out.println(movie);
+    }
+}

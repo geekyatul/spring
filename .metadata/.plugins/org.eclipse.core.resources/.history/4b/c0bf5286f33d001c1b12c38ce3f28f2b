@@ -1,0 +1,5 @@
+package com.spring.ioc.IOC_Assignment2.model;
+
+public class Player {
+
+}

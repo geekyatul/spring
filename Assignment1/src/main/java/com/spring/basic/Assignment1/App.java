@@ -1,0 +1,20 @@
+package com.spring.basic.Assignment1;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        ApplicationContext applicationContext=new ClassPathXmlApplicationContext("spring.xml");
+       
+         Movie movie=(Movie) applicationContext.getBean("movie");
+    
+         System.out.println(movie);
+    }
+}
